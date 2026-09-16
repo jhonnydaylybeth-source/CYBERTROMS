@@ -3,49 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIBERTROMS - Servicios y Soporte Técnico</title>
+    <title>CIBERTROMS - Servicio Técnico Especializado</title>
+    <!-- Fuente tecnológica / Transformers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0f172a; color: #f8fafc; text-align: center; padding: 20px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: #080c14; 
+            color: #f8fafc; 
+            text-align: center; 
+            padding: 20px; 
+            font-family: 'Rajdhani', sans-serif;
+            line-height: 1.5;
+        }
         .container { max-width: 600px; margin: 0 auto; }
-        header { padding: 40px 20px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3); }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 800; letter-spacing: 1px; }
-        p { font-size: 1.1rem; color: #e2e8f0; }
-        .card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 25px; margin: 20px 0; text-align: left; }
-        .card h2 { color: #38bdf8; margin-bottom: 12px; font-size: 1.4rem; }
-        .card ul { list-style: none; padding: 0; }
-        .card li { padding: 8px 0; border-bottom: 1px solid #334155; color: #cbd5e1; }
-        .card li:last-child { border-bottom: none; }
-        .btn-whatsapp { display: block; background-color: #25d366; color: white; text-decoration: none; padding: 16px; border-radius: 30px; font-weight: bold; font-size: 1.2rem; text-align: center; margin-top: 25px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
-        .btn-whatsapp:hover { background-color: #1ebd5a; }
-        footer { margin-top: 30px; color: #64748b; font-size: 0.9rem; }
+        
+        header { 
+            padding: 30px 20px; 
+            background: linear-gradient(135deg, #0f172a, #0284c7); 
+            border: 2px solid #38bdf8;
+            border-radius: 18px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4); 
+        }
+
+        /* Logo de CIBERTROMS */
+        .brand-logo {
+            max-width: 140px;
+            height: auto;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.6));
+        }
+
+        /* Tipografía estilo Transformers / Cybertron */
+        h1 { 
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem; 
+            font-weight: 900; 
+            letter-spacing: 3px; 
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 0 10px #38bdf8, 0 0 20px #0284c7;
+        }
+
+        header p { 
+            font-size: 1.2rem; 
+            color: #e0f2fe; 
+            margin-top: 5px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .card { 
+            background: #0f172a; 
+            border: 1px solid #1e293b; 
+            border-left: 4px solid #38bdf8;
+            border-radius: 14px; 
+            padding: 22px; 
+            margin: 18px 0; 
+            text-align: left; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5); 
+        }
+
+        .card h2 { 
+            font-family: 'Orbitron', sans-serif;
+            color: #38bdf8; 
+            margin-bottom: 15px; 
+            font-size: 1.2rem; 
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1e293b; 
+            padding-bottom: 8px; 
+        }
+        
+        ul { list-style: none; padding: 0; }
+        li { 
+            padding: 10px 0; 
+            border-bottom: 1px solid #1e293b; 
+            color: #cbd5e1; 
+            font-size: 1.15rem; 
+            font-weight: 600;
+        }
+        li:last-child { border-bottom: none; }
+        
+        .ubicacion { color: #f1f5f9; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600; }
+        
+        .btn { 
+            display: block; 
+            text-decoration: none; 
+            padding: 16px; 
+            border-radius: 30px; 
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700; 
+            font-size: 1rem; 
+            letter-spacing: 1px;
+            text-align: center; 
+            margin-top: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+            transition: transform 0.2s; 
+        }
+        .btn:active { transform: scale(0.98); }
+        .btn-whatsapp { background-color: #25d366; color: white; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
+        .btn-maps { background-color: #ea4335; color: white; }
+        
+        footer { margin-top: 30px; color: #64748b; font-size: 0.9rem; font-weight: 600; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- Muestra la imagen de tu logo si la subes como logo.png -->
+            <img src="logo.png" alt="CIBERTROMS Logo" class="brand-logo" onerror="this.style.display='none'">
             <h1>CIBERTROMS</h1>
-            <p>Soluciones Técnicas y Servicios Especializados</p>
+            <p>Servicio Técnico Especializado y Soluciones Electrónicas</p>
         </header>
 
         <main>
+            <!-- Servicios -->
             <div class="card">
-                <h2>Nuestros Servicios</h2>
+                <h2>🛠️ NUESTROS SERVICIOS</h2>
                 <ul>
-                    <li>⚡ Servicio Técnico Especializado</li>
-                    <li>⚡ Desbloqueo y Liberación de Equipos</li>
-                    <li>⚡ Formateo y Mantenimiento</li>
-                    <li>⚡ Atención Inmediata</li>
+                    <li>💻 Reparación de Computadoras y Laptops</li>
+                    <li>📱 Servicio Técnico de Teléfonos y Tablets</li>
+                    <li>🔬 Microsoldadura de alta precisión</li>
+                    <li>🔓 Desbloqueo y Liberación de Equipos</li>
+                    <li>🔊 Reparación de Bafles, Cornetas y Parlantes Chinos</li>
+                    <li>⚡ Mantenimiento y Reparación de Aparatos Electrónicos en general</li>
                 </ul>
-                <!-- Reemplaza el número de teléfono con el tuyo (Ej: 584121234567) -->
-                <a href="https://wa.me/584120000000?text=Hola%20Cibertroms,%20quiero%20consultar%20por%20un%20servicio" class="btn-whatsapp" target="_blank">
-                    📲 Contáctanos por WhatsApp
+            </div>
+
+            <!-- Ubicación -->
+            <div class="card">
+                <h2>📍 UBICACIÓN</h2>
+                <p class="ubicacion"><strong>Dirección:</strong> Urbanización Villa Baral, Casa N° 34 (Entrando por el arco), Maracaibo.</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Urbanizacion+Villa+Baral+Maracaibo" class="btn btn-maps" target="_blank">
+                    🗺️ ABRIR EN GOOGLE MAPS
                 </a>
             </div>
+
+            <!-- Botones de Contacto -->
+            <a href="https://wa.me/584246063374?text=Hola%20Cibertroms,%20quiero%20consultar%20por%20un%20servicio%20técnico" class="btn btn-whatsapp" target="_blank">
+                📲 WHATSAPP (0424-6063374)
+            </a>
+
+            <a href="https://instagram.com/Cybertronms" class="btn btn-instagram" target="_blank">
+                📸 INSTAGRAM (@Cybertronms)
+            </a>
         </main>
 
         <footer>
-            <p>&copy; 2026 CIBERTROMS - Todos los derechos reservados</p>
+            <p>&copy; CIBERTROMS - Todos los derechos reservados</p>
         </footer>
     </div>
 </body>
